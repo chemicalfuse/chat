@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="join-container">
+        <form class="form-join">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="text" id="name" placeholder="Chat room" required />
+          <button id="join" type="submit">Join</button>
+        </form>
+      </div>
+      <div class="chat-container">
+        <p class="user-list"></p>
+        <p class="room-list"></p>
+        <ul class="chat-display"></ul>
+        <p class="activity"></p>
+        <form class="form-msg">
+          <input type="text" id="message" placeholder="Your message" required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+  </body>
+</html>
